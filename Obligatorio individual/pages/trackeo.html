@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>ZyzzVibes Trackeo de Ejercicios</title>
+    <script src="../scripts/trackeo.js"></script>
+    <link rel="stylesheet" href="../styles/trackeo.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <h1>Trackeo de Ejercicios</h1>
+            <a href="../index.html"><img src="../images/logozyzz.png" id="logo" alt="logo"></a>
+        </nav>
+
+    </header>
+
+</body>
+
+<main>
+    <div>
+        
+            <div id="formulario">
+                <div>
+                    <label for="ejercicio">Ejercicio</label>
+                    <input type="text" id="ejercicio" name="ejercicio">
+                </div>
+                <div>
+                    <label for="musculo">Musculo</label>
+                      <select id="musculo" name="musculo">  
+                          <option value="pecho">Pecho</option>
+                          <option value="espalda">Espalda</option>
+                          <option value="pierna">Pierna</option>
+                          <option value="hombro">Hombro</option>
+                          <option value="biceps">Biceps</option>
+                          <option value="triceps">Triceps</option>
+                          <option value="zona media">Zona Media</option>
+                      </select>
+                </div>  
+                <div>
+                    <label for="series">Series</label>
+                    <input type="number" id="series" name="series">
+                </div>
+                <div>
+                    <label for="repeticiones">Repeticiones</label>
+                    <input type="number" id="repeticiones" name="repeticiones">
+                </div>   
+                <div>
+                    <label for="peso">Peso (Kg)</label>
+                    <input type="number" id="peso" name="peso">                  
+                </div>               
+                <div>                    
+                    <button id="botonCancelar">
+                      Cancelar
+                    </button>
+                    <button id="botonModificar">
+                      Modificar
+                    </button>
+                    <button id="botonAgregar">
+                      Agregar
+                    </button>
+                </div>
+            </div>
+                        
+    </div>
+
+    <h3 id="tablatitulo">Progreso</h3>
+      <div>
+        <table id="tablaProgreso">
+            <thead>
+              <tr> 
+                <th scope="col">Ejercicio</th>                                                               
+                <th scope="col">Musculo</th>
+                <th scope="col">Series</th>
+                <th scope="col">Repeticiones</th>
+                <th scope="col">Peso (Kg)</th>
+              </tr>
+            </thead>
+            <tbody id="trackeoTabla">
+                                             
+            </tbody>
+        </table>
+      </div>
+
+      <h3 id="historialTitulo">Historial</h3>
+        <div>
+            <table id="historialTabla">
+                <thead>
+                    <tr>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Ejercicio</th>
+                        <th scope="col">Musculo</th>
+                        <th scope="col">Series</th>
+                        <th scope="col">Repeticiones</th>
+                        <th scope="col">Peso (Kg)</th>
+                    </tr>
+                </thead>
+                <tbody id="historialCuerpo">
+                </tbody>
+            </table>
+        </div>
+
+</main>
+
+<footer>
+    <h2>zyzzvibes@gmail.com    2024</h2>
+</footer>
